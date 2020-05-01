@@ -1,0 +1,358 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Boda Boda Banja</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   
+  <nav class="the-menu-section">
+    <div class="container-fluid">
+      <div class="row">
+         <div class="col-lg-12">
+		     <ol class="the-menux">
+		     	<li><a href="/user/login">Login</a></li>
+          <li><a href="/user/register">Register</a></li>
+		     	<li><a href="/adminpanel">Admin Panel</a></li>
+		     	<li><a href="/user/salesteam">Sales Persons</a></li>
+		     	<li><a href="/customers">Customers</a></li>
+          <li><a href="/customers/register">Add Customers</a></li>
+          <li><a href="/sales/reports">Sales Reports</a></li>
+		     </ol>
+         </div> 
+      </div> 
+    </div>  	
+  </nav> 
+  <div class="container-fluid the-home-bg">
+    <div class="row group clearfix">
+
+      <div class="col-md-1 nopadding"> 
+      </div>
+      <div class="col-md-10"> 
+      <div class="col-md-form-log"> 
+      	    
+      <div class="log-form clearfix group" style="border: 2px solid #fff;">       
+      
+
+      <div class="text-center mb-4 text-center-logo">
+		    	<img src="/images/logo.png" alt="" class="te-log">
+		  </div>      
+		  <h1 class="h3 font-weight-normal"> Register Customer </h1>
+		  <form class="sendformcustomer" 
+            action="javascript:void(0);" 
+            method="post" class="clearfix group">
+		      
+            
+
+
+        <div class="form-row clearfix group">
+          <h1 class="h5 basics-detaisl"> Basic Details </h1>
+        </div>            
+    
+        <div class="form-row clearfix group">
+          <div class="col-md-4 mb-3">
+           <div class="form-group has-feedback">
+              <label for="validationTooltip01">Current date</label>
+              <input type="text" class="form-control currentDate" 
+                     readonly="on" placeholder="Date" name="date" id="cdate" />
+              <span  class="error_cdate error_clearin"></span>       
+            </div>
+           </div>
+
+        <div class="col-md-4 mb-3">
+          <label for="validationTooltip01">Date of Birth</label>
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control"  
+              readonly="on"  placeholder="Date of Birth" 
+              name="date_of_birth" id="dob"  />
+            <span class="error_dob error_clearin"></span>  
+          </div>
+          </div>
+        </div>
+
+        <div class="form-row clearfix group">  
+
+          <div class="col-md-6 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">First Name</label>
+            <input type="text" class="form-control" 
+            placeholder="First Name" name="first_name" id="firstname" />
+           <span class="error_firstname error_clearin"></span>  
+          </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Last Name</label>
+            <input type="text" class="form-control" 
+            placeholder="Last Name" name="last_name" id="lastname" />
+           <span class="error_lastname error_clearin"></span>  
+          </div>
+          </div>
+
+        </div>  
+
+        <div class="form-row clearfix group">
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Email</label>
+            <input type="email" class="form-control" 
+            placeholder="Email" name="email" id="email" />
+           <span class="error_email error_clearin"></span>  
+          </div>
+         </div> 
+
+
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Phone</label>
+            <input type="text" class="form-control" 
+            placeholder="Phone" name="phone" id="phone" />
+           <span class="error_phone error_clearin"></span>  
+          </div>
+         </div> 
+
+
+        <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Marital Status</label>
+          <select class="form-control" name="maritalstatus" id="maritalstatus">
+              <option value=""> Select Status</option>
+              <option value="married"> Married </option>
+              <option value="single"> Single </option>
+            </select> 
+           <span class="error_maritalstatus error_clearin"></span> 
+          </div>
+        </div>
+
+        </div> 
+
+
+        <div class="form-row clearfix group">
+          
+
+        <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Nationality</label>
+          <select class="form-control" name="nationality" id="nationality">
+              <option value=""> Select Nationality </option>
+              <option value="ugandan"> Ugandan </option>
+              <option value="kenyan"> Kenyan </option>
+              <option value="tanzanian "> Tanzanian </option>
+            </select> 
+           <span class="error_nationality error_clearin"></span> 
+          </div>
+        </div> 
+
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">NIN ID</label>
+            <input type="text" class="form-control" 
+            placeholder="ID NIN " name="nin" id="nin" />
+           <span class="error_nin error_clearin"></span>  
+          </div>
+         </div>
+
+
+        </div> 
+
+
+
+        <div class="form-row clearfix group">
+          <h1 class="h5 basics-detaisl"> Vehicle Details </h1>
+        </div> 
+
+
+        <div class="form-row clearfix group">
+
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Vehicle</label>
+          <select class="form-control" name="vehicle" id="vehicle">
+              <option value=""> Select Type</option>
+              <option value="bodaboda"> bodaboda </option>
+              <option value="tuktuk"> tuktuk </option>
+              <option value="tricycle"> tricycle </option>
+            </select> 
+           <span class="error_vehicle error_clearin"></span> 
+          </div>
+        </div> 
+
+
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Payment Amount</label>
+            <input type="text" class="form-control" placeholder="Amount" name="amount" id="amount" />
+           <span class="error_amountx error_clearin"></span>  
+          </div>
+         </div>
+
+        </div> 
+
+
+        <div class="form-row clearfix group">
+          <h1 class="h5 basics-detaisl"> Next to Kin </h1>
+        </div> 
+
+        
+         
+
+        <div class="form-row clearfix group">
+          
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Referee’s name</label>
+            <input type="text" class="form-control" name="refereename" id="refereename" />
+           <span class="error_refereenames error_clearin"></span>  
+          </div>
+         </div>
+
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Referee’s phone</label>
+            <input type="text" class="form-control" 
+            name="refereephone" id="refereephone" />
+           <span class="error_refereephone error_clearin"></span>  
+          </div>
+         </div>
+
+
+          <div     class="col-md-4 mb-3">
+          <div     class="form-group has-feedback">
+          <label   for="validationTooltip01">Work of the referee</label>
+            <input type="text" class="form-control" 
+                   name="refereework" id="refereework" />
+           <span   class="error_refereework error_clearin"></span>  
+          </div>
+         </div>
+
+
+        </div> 
+
+
+        <div class="form-row clearfix group">
+        <div class="col-md-4 mb-3">
+          <label for="validationTooltip01">Referee Date of Birth</label>
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control"  
+              readonly="on"  placeholder="Date of Birth" 
+              name="refereedob" id="refereedob"  />
+            <span class="error_refereedob error_clearin"></span>  
+          </div>
+          </div>
+        </div>
+ 
+
+
+
+
+        <div class="form-row clearfix group">
+          <h1 class="h5 basics-detaisl"> Address Details </h1>
+        </div> 
+
+        <div class="form-row clearfix group">
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Other Loans</label>
+            <input type="text" class="form-control" 
+            placeholder="Other Loans number" name="otherloans" id="otherloans" />
+           <span class="error_otherloans error_clearin"></span>  
+          </div>
+         </div>
+
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Stage name</label>
+            <input type="text" class="form-control" 
+            placeholder="Stage name" name="stage" id="stage" />
+           <span class="error_stage error_clearin"></span>  
+          </div>
+         </div>
+
+
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">LC1</label>
+            <input type="text" class="form-control" 
+            placeholder="LC1" name="lc1" id="lc1" />
+           <span class="error_lc1 error_clearin"></span>  
+          </div>
+         </div>
+       </div> 
+
+
+
+      <div class="form-row clearfix group">
+          <div class="col-md-4 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">LC2</label>
+            <input type="text" class="form-control" 
+            placeholder="lC2" name="lc2" id="lc2" />
+           <span class="error_lc2 error_clearin"></span>  
+          </div>
+         </div>
+          <div class="col-md-8 mb-3">
+          <div class="form-group has-feedback">
+          <label for="validationTooltip01">Confirm of required
+copies of documents</label>
+            <input type="file" class="form-control" 
+            placeholder="confirm  documents" name="docs" id="docs" />
+           <span class="error_docs error_clearin"></span>  
+          </div>
+         </div>
+       </div> 
+
+
+
+
+
+
+
+
+
+        <div class="form-row clearfix group">
+        <div class="col-md-8 mb-12">
+          <div class="form-group has-feedback clearfix group">
+            <button type="submit" 
+              class="btn btn-primary btn-block btn-flat submitcustomerregister">
+              Submit</button>
+          </div>
+        </div>
+        <div class="col-md-4 mb-12">
+          <div class="form-group has-feedback clearfix group">
+            <button type="submit" 
+              class="btn btn-secondary btn-block btn-flat resetcustomerregister">
+              Cancel</button>
+          </div>
+        </div> 
+        </div>
+
+
+
+      </form>
+		  </div>  
+      </div>
+
+      <div class="clearfix group"></div>
+      </div>
+
+
+    </div> 
+  </div> 
+  <footer class="the-footer-section">
+     <p>  &copy; Boda Boda Banja  2020 </p>
+  </footer> 
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>
